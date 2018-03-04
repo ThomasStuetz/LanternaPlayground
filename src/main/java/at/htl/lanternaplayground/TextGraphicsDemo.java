@@ -27,35 +27,35 @@ public class TextGraphicsDemo {
         tg.putString(0, 0, "TextGraphicsDemo");
         screen.refresh();
 
-//        tg.putString(0, 0, "TextGraphicsDemo - change background colors                        ");
-//        for (TextColor.ANSI backgroundColor : TextColor.ANSI.values()) {
-//            tg.setBackgroundColor(backgroundColor);
-//            tg.fill(' ');
-//            screen.refresh();
-//            Thread.sleep(500);
-//        }
-//
-//        // http://mabe02.github.io/lanterna/apidocs/3.0/com/googlecode/lanterna/Symbols.html
-//        tg.putString(0, 4, "TextGraphicsDemo - draw figures                        ");
-//        //tg.setBackgroundColor(TextColor.ANSI.GREEN);
-//        tg.drawRectangle(new TerminalPosition(1, 5), new TerminalSize(4, 4), Symbols.BLOCK_SPARSE);
-//        tg.drawLine(new TerminalPosition(7, 5), new TerminalPosition(10, 5), Symbols.DOUBLE_LINE_HORIZONTAL);
-//        tg.drawTriangle(
-//                new TerminalPosition(12, 5),
-//                new TerminalPosition(20, 5),
-//                new TerminalPosition(16, 9),
-//                Symbols.SOLID_SQUARE_SMALL);
-//        screen.refresh();
-//        Thread.sleep(2000);
-//        tg.fillRectangle(new TerminalPosition(1, 5), new TerminalSize(4, 4), Symbols.BLOCK_SPARSE);
-//        //tg.setBackgroundColor(TextColor.ANSI.DEFAULT);
-//        tg.fillTriangle(
-//                new TerminalPosition(12, 5),
-//                new TerminalPosition(20, 5),
-//                new TerminalPosition(16, 9),
-//                Symbols.SOLID_SQUARE_SMALL);
-//        screen.refresh();
-//        Thread.sleep(2000);
+        tg.putString(0, 0, "TextGraphicsDemo - change background colors                        ");
+        for (TextColor.ANSI backgroundColor : TextColor.ANSI.values()) {
+            tg.setBackgroundColor(backgroundColor);
+            tg.fill(' ');
+            screen.refresh();
+            Thread.sleep(500);
+        }
+
+        // http://mabe02.github.io/lanterna/apidocs/3.0/com/googlecode/lanterna/Symbols.html
+        tg.putString(0, 4, "TextGraphicsDemo - draw figures                        ");
+        //tg.setBackgroundColor(TextColor.ANSI.GREEN);
+        tg.drawRectangle(new TerminalPosition(1, 5), new TerminalSize(4, 4), Symbols.BLOCK_SPARSE);
+        tg.drawLine(new TerminalPosition(7, 5), new TerminalPosition(10, 5), Symbols.DOUBLE_LINE_HORIZONTAL);
+        tg.drawTriangle(
+                new TerminalPosition(12, 5),
+                new TerminalPosition(20, 5),
+                new TerminalPosition(16, 9),
+                Symbols.SOLID_SQUARE_SMALL);
+        screen.refresh();
+        Thread.sleep(2000);
+        tg.fillRectangle(new TerminalPosition(1, 5), new TerminalSize(4, 4), Symbols.BLOCK_SPARSE);
+        //tg.setBackgroundColor(TextColor.ANSI.DEFAULT);
+        tg.fillTriangle(
+                new TerminalPosition(12, 5),
+                new TerminalPosition(20, 5),
+                new TerminalPosition(16, 9),
+                Symbols.SOLID_SQUARE_SMALL);
+        screen.refresh();
+        Thread.sleep(2000);
 
         tg.putString(0, 10, "TextGraphicsDemo - move character                        ");
         TerminalPosition formerPos = null, currentPos;
